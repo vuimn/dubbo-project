@@ -7,6 +7,8 @@
 
 	<context:component-scan base-package="com.itheima.service"/>
 
+	<!--启动dubbo服务会占用改端口-->
+	<dubbo:protocol port="20880"/>
 	<!--dubbo的配置-->
 	<!--1.配置的项目的名称,唯一-->
 	<dubbo:application name="dubbo-service">
