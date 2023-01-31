@@ -1,5 +1,6 @@
 package com.itheima.controller;
 
+import com.itheima.pojo.User;
 import com.itheima.service.UserService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,5 +31,10 @@ public class UserController {
     @RequestMapping("/sayHello")
     public String sayHello(){
         return userService.sayHello();
+    }
+
+    @RequestMapping("/find")
+    public User find(){
+        return userService.findUserById(1);
     }
 }

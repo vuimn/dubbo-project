@@ -18,4 +18,7 @@
 	<dubbo:registry address="zookeeper://8.130.41.32:2181"/>
 	<!--配置dubbo包扫描-->
 	<dubbo:annotation package="com.itheima.service.impl"/>
+
+	<!--元数据配置-->
+	<dubbo:metadata-report address="zookeeper://8.130.41.32:2181"/>
 </beans>

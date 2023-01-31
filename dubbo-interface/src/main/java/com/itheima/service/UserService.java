@@ -1,6 +1,8 @@
 package com.itheima.service;
 
 
+import com.itheima.pojo.User;
+
 /**
  * @author 子木
  * @version 1.0
@@ -10,4 +12,6 @@ package com.itheima.service;
 public interface UserService {
 
     public String sayHello();
+
+    public User findUserById(int id);
 }
